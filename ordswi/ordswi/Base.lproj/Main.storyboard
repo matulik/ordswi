@@ -122,7 +122,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="144" y="255" width="194" height="30"/>
+                                    <rect key="frame" x="112" y="261" width="194" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-Wp-ft2">
@@ -130,7 +130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="144" y="293" width="194" height="30"/>
+                                    <rect key="frame" x="112" y="299" width="194" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-IN-in3">
@@ -139,7 +139,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="259" width="51" height="21"/>
+                                    <rect key="frame" x="47" y="265" width="51" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVy-6L-1vN">
@@ -148,33 +148,36 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="297" width="41" height="21"/>
+                                    <rect key="frame" x="47" y="303" width="41" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxj-tQ-Zo6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add item">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="178" y="337" width="62" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addItem:" destination="1AE-W7-T5x" eventType="touchUpInside" id="Tzc-Cc-A7t"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-l1-E27">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.5" green="0.21968400769999999" blue="0.00099822637279999992" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="223" y="226" width="36" height="21"/>
+                                    <rect key="frame" x="112" y="232" width="115" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxj-tQ-Zo6">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="218" y="331" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="addItem:" destination="1AE-W7-T5x" eventType="touchUpInside" id="Tzc-Cc-A7t"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="sxj-tQ-Zo6" secondAttribute="centerY" constant="-46" id="mrZ-op-Wgv"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zc9-Ks-BiF"/>
@@ -182,8 +185,11 @@
                                 <exclude reference="g0P-Wp-ft2"/>
                                 <exclude reference="ydu-IN-in3"/>
                                 <exclude reference="zVy-6L-1vN"/>
-                                <exclude reference="1ka-l1-E27"/>
                                 <exclude reference="sxj-tQ-Zo6"/>
+                                <exclude reference="1ka-l1-E27"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="mrZ-op-Wgv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -193,8 +199,11 @@
                                 <include reference="g0P-Wp-ft2"/>
                                 <include reference="ydu-IN-in3"/>
                                 <include reference="zVy-6L-1vN"/>
-                                <include reference="1ka-l1-E27"/>
                                 <include reference="sxj-tQ-Zo6"/>
+                                <include reference="1ka-l1-E27"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="mrZ-op-Wgv"/>
                             </mask>
                         </variation>
                         <connections>

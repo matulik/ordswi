@@ -15,8 +15,11 @@ class AddItemViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    
+        // clear errorlabel
+        self.errorLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +27,14 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func addItem(sender: AnyObject) {
-        
+        var name = nameTextField.text
+        var cost = costTextField.text
+        if count(name) <= 0 {
+            self.errorLabel.text = "Error in name field"
+        }
+        else {
+            ## TODO
+        }
     }
 
     /*

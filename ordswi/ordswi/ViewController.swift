@@ -8,6 +8,8 @@
 
 import UIKit
 
+var orders = [Order]()
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
