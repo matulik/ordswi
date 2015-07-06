@@ -9,5 +9,9 @@
 import UIKit
 
 class LeftToRightSegue: UIStoryboardSegue {
+    
+    override func perform() {
+
+    }
    
 }

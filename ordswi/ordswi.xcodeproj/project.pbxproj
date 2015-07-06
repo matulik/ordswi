@@ -15,6 +15,8 @@
 		5EFBE3211B4AB4C200B09759 /* ordswiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3201B4AB4C200B09759 /* ordswiTests.swift */; };
 		5EFBE32F1B4AB5A800B09759 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE32E1B4AB5A800B09759 /* Item.swift */; };
 		5EFBE3311B4AB5C400B09759 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3301B4AB5C400B09759 /* Order.swift */; };
+		5EFBE3351B4AB73300B09759 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3341B4AB73300B09759 /* AddItemViewController.swift */; };
+		5EFBE3381B4ABBF800B09759 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3371B4ABBF800B09759 /* LeftToRightSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		5EFBE3201B4AB4C200B09759 /* ordswiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordswiTests.swift; sourceTree = "<group>"; };
 		5EFBE32E1B4AB5A800B09759 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5EFBE3301B4AB5C400B09759 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5EFBE3341B4AB73300B09759 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		5EFBE3371B4ABBF800B09759 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		5EFBE3071B4AB4C200B09759 /* ordswi */ = {
 			isa = PBXGroup;
 			children = (
+				5EFBE3361B4ABBC400B09759 /* Segue */,
 				5EFBE32D1B4AB50E00B09759 /* Controller */,
 				5EFBE32C1B4AB50A00B09759 /* View */,
 				5EFBE32A1B4AB50000B09759 /* Model */,
@@ -137,9 +142,18 @@
 		5EFBE32D1B4AB50E00B09759 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5EFBE3341B4AB73300B09759 /* AddItemViewController.swift */,
 				5EFBE30C1B4AB4C200B09759 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		5EFBE3361B4ABBC400B09759 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				5EFBE3371B4ABBF800B09759 /* LeftToRightSegue.swift */,
+			);
+			name = Segue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFBE3351B4AB73300B09759 /* AddItemViewController.swift in Sources */,
 				5EFBE30D1B4AB4C200B09759 /* ViewController.swift in Sources */,
+				5EFBE3381B4ABBF800B09759 /* LeftToRightSegue.swift in Sources */,
 				5EFBE32F1B4AB5A800B09759 /* Item.swift in Sources */,
 				5EFBE3311B4AB5C400B09759 /* Order.swift in Sources */,
 				5EFBE30B1B4AB4C200B09759 /* AppDelegate.swift in Sources */,

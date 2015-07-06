@@ -9,6 +9,9 @@
 import UIKit
 
 class AddItemViewController: UIViewController {
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var costTextField: UITextField!
+    @IBOutlet var errorLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,9 @@ class AddItemViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func addItem(sender: AnyObject) {
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -31,5 +36,7 @@ class AddItemViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+
 
 }
