@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E7CFD501B4A918700574E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD4F1B4A918700574E10 /* AppDelegate.swift */; };
-		5E7CFD521B4A918700574E10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD511B4A918700574E10 /* ViewController.swift */; };
-		5E7CFD551B4A918700574E10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CFD531B4A918700574E10 /* Main.storyboard */; };
-		5E7CFD571B4A918700574E10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CFD561B4A918700574E10 /* Images.xcassets */; };
-		5E7CFD5A1B4A918700574E10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CFD581B4A918700574E10 /* LaunchScreen.xib */; };
-		5E7CFD661B4A918700574E10 /* ordswiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD651B4A918700574E10 /* ordswiTests.swift */; };
-		5E7CFD751B4AA09200574E10 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD741B4AA09200574E10 /* Order.swift */; };
-		5E7CFD771B4AA0B900574E10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD761B4AA0B900574E10 /* Item.swift */; };
+		5EFBE30B1B4AB4C200B09759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE30A1B4AB4C200B09759 /* AppDelegate.swift */; };
+		5EFBE30D1B4AB4C200B09759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE30C1B4AB4C200B09759 /* ViewController.swift */; };
+		5EFBE3101B4AB4C200B09759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFBE30E1B4AB4C200B09759 /* Main.storyboard */; };
+		5EFBE3121B4AB4C200B09759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFBE3111B4AB4C200B09759 /* Images.xcassets */; };
+		5EFBE3151B4AB4C200B09759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFBE3131B4AB4C200B09759 /* LaunchScreen.xib */; };
+		5EFBE3211B4AB4C200B09759 /* ordswiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3201B4AB4C200B09759 /* ordswiTests.swift */; };
+		5EFBE32F1B4AB5A800B09759 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE32E1B4AB5A800B09759 /* Item.swift */; };
+		5EFBE3311B4AB5C400B09759 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE3301B4AB5C400B09759 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E7CFD601B4A918700574E10 /* PBXContainerItemProxy */ = {
+		5EFBE31B1B4AB4C200B09759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E7CFD421B4A918700574E10 /* Project object */;
+			containerPortal = 5EFBE2FD1B4AB4C200B09759 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E7CFD491B4A918700574E10;
+			remoteGlobalIDString = 5EFBE3041B4AB4C200B09759;
 			remoteInfo = ordswi;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E7CFD4A1B4A918700574E10 /* ordswi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ordswi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E7CFD4E1B4A918700574E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E7CFD4F1B4A918700574E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E7CFD511B4A918700574E10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E7CFD541B4A918700574E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E7CFD561B4A918700574E10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5E7CFD591B4A918700574E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5E7CFD5F1B4A918700574E10 /* ordswiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ordswiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E7CFD641B4A918700574E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E7CFD651B4A918700574E10 /* ordswiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordswiTests.swift; sourceTree = "<group>"; };
-		5E7CFD741B4AA09200574E10 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		5E7CFD761B4AA0B900574E10 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5EFBE3051B4AB4C200B09759 /* ordswi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ordswi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFBE3091B4AB4C200B09759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EFBE30A1B4AB4C200B09759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EFBE30C1B4AB4C200B09759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EFBE30F1B4AB4C200B09759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EFBE3111B4AB4C200B09759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5EFBE3141B4AB4C200B09759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5EFBE31A1B4AB4C200B09759 /* ordswiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ordswiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFBE31F1B4AB4C200B09759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EFBE3201B4AB4C200B09759 /* ordswiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordswiTests.swift; sourceTree = "<group>"; };
+		5EFBE32E1B4AB5A800B09759 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5EFBE3301B4AB5C400B09759 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E7CFD471B4A918700574E10 /* Frameworks */ = {
+		5EFBE3021B4AB4C200B09759 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E7CFD5C1B4A918700574E10 /* Frameworks */ = {
+		5EFBE3171B4AB4C200B09759 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,84 +60,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E7CFD411B4A918700574E10 = {
+		5EFBE2FC1B4AB4C200B09759 = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD4C1B4A918700574E10 /* ordswi */,
-				5E7CFD621B4A918700574E10 /* ordswiTests */,
-				5E7CFD4B1B4A918700574E10 /* Products */,
+				5EFBE3071B4AB4C200B09759 /* ordswi */,
+				5EFBE31D1B4AB4C200B09759 /* ordswiTests */,
+				5EFBE3061B4AB4C200B09759 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E7CFD4B1B4A918700574E10 /* Products */ = {
+		5EFBE3061B4AB4C200B09759 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD4A1B4A918700574E10 /* ordswi.app */,
-				5E7CFD5F1B4A918700574E10 /* ordswiTests.xctest */,
+				5EFBE3051B4AB4C200B09759 /* ordswi.app */,
+				5EFBE31A1B4AB4C200B09759 /* ordswiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E7CFD4C1B4A918700574E10 /* ordswi */ = {
+		5EFBE3071B4AB4C200B09759 /* ordswi */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD711B4A919C00574E10 /* Controller */,
-				5E7CFD701B4A919600574E10 /* View */,
-				5E7CFD6F1B4A919000574E10 /* Model */,
-				5E7CFD4F1B4A918700574E10 /* AppDelegate.swift */,
-				5E7CFD561B4A918700574E10 /* Images.xcassets */,
-				5E7CFD4D1B4A918700574E10 /* Supporting Files */,
+				5EFBE32D1B4AB50E00B09759 /* Controller */,
+				5EFBE32C1B4AB50A00B09759 /* View */,
+				5EFBE32A1B4AB50000B09759 /* Model */,
+				5EFBE30A1B4AB4C200B09759 /* AppDelegate.swift */,
+				5EFBE3111B4AB4C200B09759 /* Images.xcassets */,
+				5EFBE3081B4AB4C200B09759 /* Supporting Files */,
 			);
 			path = ordswi;
 			sourceTree = "<group>";
 		};
-		5E7CFD4D1B4A918700574E10 /* Supporting Files */ = {
+		5EFBE3081B4AB4C200B09759 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD4E1B4A918700574E10 /* Info.plist */,
+				5EFBE3091B4AB4C200B09759 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5E7CFD621B4A918700574E10 /* ordswiTests */ = {
+		5EFBE31D1B4AB4C200B09759 /* ordswiTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD651B4A918700574E10 /* ordswiTests.swift */,
-				5E7CFD631B4A918700574E10 /* Supporting Files */,
+				5EFBE3201B4AB4C200B09759 /* ordswiTests.swift */,
+				5EFBE31E1B4AB4C200B09759 /* Supporting Files */,
 			);
 			path = ordswiTests;
 			sourceTree = "<group>";
 		};
-		5E7CFD631B4A918700574E10 /* Supporting Files */ = {
+		5EFBE31E1B4AB4C200B09759 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD641B4A918700574E10 /* Info.plist */,
+				5EFBE31F1B4AB4C200B09759 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5E7CFD6F1B4A919000574E10 /* Model */ = {
+		5EFBE32A1B4AB50000B09759 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD761B4AA0B900574E10 /* Item.swift */,
-				5E7CFD741B4AA09200574E10 /* Order.swift */,
+				5EFBE32E1B4AB5A800B09759 /* Item.swift */,
+				5EFBE3301B4AB5C400B09759 /* Order.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		5E7CFD701B4A919600574E10 /* View */ = {
+		5EFBE32C1B4AB50A00B09759 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD531B4A918700574E10 /* Main.storyboard */,
-				5E7CFD581B4A918700574E10 /* LaunchScreen.xib */,
+				5EFBE30E1B4AB4C200B09759 /* Main.storyboard */,
+				5EFBE3131B4AB4C200B09759 /* LaunchScreen.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		5E7CFD711B4A919C00574E10 /* Controller */ = {
+		5EFBE32D1B4AB50E00B09759 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CFD511B4A918700574E10 /* ViewController.swift */,
+				5EFBE30C1B4AB4C200B09759 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -145,13 +145,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E7CFD491B4A918700574E10 /* ordswi */ = {
+		5EFBE3041B4AB4C200B09759 /* ordswi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E7CFD691B4A918700574E10 /* Build configuration list for PBXNativeTarget "ordswi" */;
+			buildConfigurationList = 5EFBE3241B4AB4C200B09759 /* Build configuration list for PBXNativeTarget "ordswi" */;
 			buildPhases = (
-				5E7CFD461B4A918700574E10 /* Sources */,
-				5E7CFD471B4A918700574E10 /* Frameworks */,
-				5E7CFD481B4A918700574E10 /* Resources */,
+				5EFBE3011B4AB4C200B09759 /* Sources */,
+				5EFBE3021B4AB4C200B09759 /* Frameworks */,
+				5EFBE3031B4AB4C200B09759 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -159,46 +159,46 @@
 			);
 			name = ordswi;
 			productName = ordswi;
-			productReference = 5E7CFD4A1B4A918700574E10 /* ordswi.app */;
+			productReference = 5EFBE3051B4AB4C200B09759 /* ordswi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5E7CFD5E1B4A918700574E10 /* ordswiTests */ = {
+		5EFBE3191B4AB4C200B09759 /* ordswiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E7CFD6C1B4A918700574E10 /* Build configuration list for PBXNativeTarget "ordswiTests" */;
+			buildConfigurationList = 5EFBE3271B4AB4C200B09759 /* Build configuration list for PBXNativeTarget "ordswiTests" */;
 			buildPhases = (
-				5E7CFD5B1B4A918700574E10 /* Sources */,
-				5E7CFD5C1B4A918700574E10 /* Frameworks */,
-				5E7CFD5D1B4A918700574E10 /* Resources */,
+				5EFBE3161B4AB4C200B09759 /* Sources */,
+				5EFBE3171B4AB4C200B09759 /* Frameworks */,
+				5EFBE3181B4AB4C200B09759 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E7CFD611B4A918700574E10 /* PBXTargetDependency */,
+				5EFBE31C1B4AB4C200B09759 /* PBXTargetDependency */,
 			);
 			name = ordswiTests;
 			productName = ordswiTests;
-			productReference = 5E7CFD5F1B4A918700574E10 /* ordswiTests.xctest */;
+			productReference = 5EFBE31A1B4AB4C200B09759 /* ordswiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E7CFD421B4A918700574E10 /* Project object */ = {
+		5EFBE2FD1B4AB4C200B09759 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = mt;
 				TargetAttributes = {
-					5E7CFD491B4A918700574E10 = {
+					5EFBE3041B4AB4C200B09759 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					5E7CFD5E1B4A918700574E10 = {
+					5EFBE3191B4AB4C200B09759 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 5E7CFD491B4A918700574E10;
+						TestTargetID = 5EFBE3041B4AB4C200B09759;
 					};
 				};
 			};
-			buildConfigurationList = 5E7CFD451B4A918700574E10 /* Build configuration list for PBXProject "ordswi" */;
+			buildConfigurationList = 5EFBE3001B4AB4C200B09759 /* Build configuration list for PBXProject "ordswi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,29 +206,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E7CFD411B4A918700574E10;
-			productRefGroup = 5E7CFD4B1B4A918700574E10 /* Products */;
+			mainGroup = 5EFBE2FC1B4AB4C200B09759;
+			productRefGroup = 5EFBE3061B4AB4C200B09759 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E7CFD491B4A918700574E10 /* ordswi */,
-				5E7CFD5E1B4A918700574E10 /* ordswiTests */,
+				5EFBE3041B4AB4C200B09759 /* ordswi */,
+				5EFBE3191B4AB4C200B09759 /* ordswiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E7CFD481B4A918700574E10 /* Resources */ = {
+		5EFBE3031B4AB4C200B09759 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7CFD551B4A918700574E10 /* Main.storyboard in Resources */,
-				5E7CFD5A1B4A918700574E10 /* LaunchScreen.xib in Resources */,
-				5E7CFD571B4A918700574E10 /* Images.xcassets in Resources */,
+				5EFBE3101B4AB4C200B09759 /* Main.storyboard in Resources */,
+				5EFBE3151B4AB4C200B09759 /* LaunchScreen.xib in Resources */,
+				5EFBE3121B4AB4C200B09759 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E7CFD5D1B4A918700574E10 /* Resources */ = {
+		5EFBE3181B4AB4C200B09759 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,48 +238,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E7CFD461B4A918700574E10 /* Sources */ = {
+		5EFBE3011B4AB4C200B09759 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7CFD771B4AA0B900574E10 /* Item.swift in Sources */,
-				5E7CFD521B4A918700574E10 /* ViewController.swift in Sources */,
-				5E7CFD751B4AA09200574E10 /* Order.swift in Sources */,
-				5E7CFD501B4A918700574E10 /* AppDelegate.swift in Sources */,
+				5EFBE30D1B4AB4C200B09759 /* ViewController.swift in Sources */,
+				5EFBE32F1B4AB5A800B09759 /* Item.swift in Sources */,
+				5EFBE3311B4AB5C400B09759 /* Order.swift in Sources */,
+				5EFBE30B1B4AB4C200B09759 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E7CFD5B1B4A918700574E10 /* Sources */ = {
+		5EFBE3161B4AB4C200B09759 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7CFD661B4A918700574E10 /* ordswiTests.swift in Sources */,
+				5EFBE3211B4AB4C200B09759 /* ordswiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E7CFD611B4A918700574E10 /* PBXTargetDependency */ = {
+		5EFBE31C1B4AB4C200B09759 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5E7CFD491B4A918700574E10 /* ordswi */;
-			targetProxy = 5E7CFD601B4A918700574E10 /* PBXContainerItemProxy */;
+			target = 5EFBE3041B4AB4C200B09759 /* ordswi */;
+			targetProxy = 5EFBE31B1B4AB4C200B09759 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E7CFD531B4A918700574E10 /* Main.storyboard */ = {
+		5EFBE30E1B4AB4C200B09759 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E7CFD541B4A918700574E10 /* Base */,
+				5EFBE30F1B4AB4C200B09759 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5E7CFD581B4A918700574E10 /* LaunchScreen.xib */ = {
+		5EFBE3131B4AB4C200B09759 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E7CFD591B4A918700574E10 /* Base */,
+				5EFBE3141B4AB4C200B09759 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5E7CFD671B4A918700574E10 /* Debug */ = {
+		5EFBE3221B4AB4C200B09759 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		5E7CFD681B4A918700574E10 /* Release */ = {
+		5EFBE3231B4AB4C200B09759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -370,27 +370,29 @@
 			};
 			name = Release;
 		};
-		5E7CFD6A1B4A918700574E10 /* Debug */ = {
+		5EFBE3251B4AB4C200B09759 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ordswi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5E7CFD6B1B4A918700574E10 /* Release */ = {
+		5EFBE3261B4AB4C200B09759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ordswi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		5E7CFD6D1B4A918700574E10 /* Debug */ = {
+		5EFBE3281B4AB4C200B09759 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -409,7 +411,7 @@
 			};
 			name = Debug;
 		};
-		5E7CFD6E1B4A918700574E10 /* Release */ = {
+		5EFBE3291B4AB4C200B09759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -427,32 +429,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E7CFD451B4A918700574E10 /* Build configuration list for PBXProject "ordswi" */ = {
+		5EFBE3001B4AB4C200B09759 /* Build configuration list for PBXProject "ordswi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E7CFD671B4A918700574E10 /* Debug */,
-				5E7CFD681B4A918700574E10 /* Release */,
+				5EFBE3221B4AB4C200B09759 /* Debug */,
+				5EFBE3231B4AB4C200B09759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E7CFD691B4A918700574E10 /* Build configuration list for PBXNativeTarget "ordswi" */ = {
+		5EFBE3241B4AB4C200B09759 /* Build configuration list for PBXNativeTarget "ordswi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E7CFD6A1B4A918700574E10 /* Debug */,
-				5E7CFD6B1B4A918700574E10 /* Release */,
+				5EFBE3251B4AB4C200B09759 /* Debug */,
+				5EFBE3261B4AB4C200B09759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		5E7CFD6C1B4A918700574E10 /* Build configuration list for PBXNativeTarget "ordswiTests" */ = {
+		5EFBE3271B4AB4C200B09759 /* Build configuration list for PBXNativeTarget "ordswiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E7CFD6D1B4A918700574E10 /* Debug */,
-				5E7CFD6E1B4A918700574E10 /* Release */,
+				5EFBE3281B4AB4C200B09759 /* Debug */,
+				5EFBE3291B4AB4C200B09759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5E7CFD421B4A918700574E10 /* Project object */;
+	rootObject = 5EFBE2FD1B4AB4C200B09759 /* Project object */;
 }

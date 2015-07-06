@@ -24,6 +24,8 @@ class Order {
     // Proporties
     var id : UInt
     var count : UInt
+    var isOrdered : Bool = false
+    var orderCost : Double = 0.0
     var items = [Item]()
     
     init() {
@@ -34,6 +36,22 @@ class Order {
         //
         self.count = 0
     }
+    
+    func setOrdered() {
+        self.isOrdered = true
+    }
+    
+    func calcOrder() {
+        var cost : Double = 0.0
+        for i in items {
+            cost = cost + i.cost
+        }
+    }
+    
+    func getOrderCost() -> Double {
+        return orderCost
+    }
+    
     
     func addItem(item: Item?) {
         if let i = item {
