@@ -13,6 +13,8 @@
 		5E7CFD571B4A918700574E10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CFD561B4A918700574E10 /* Images.xcassets */; };
 		5E7CFD5A1B4A918700574E10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CFD581B4A918700574E10 /* LaunchScreen.xib */; };
 		5E7CFD661B4A918700574E10 /* ordswiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD651B4A918700574E10 /* ordswiTests.swift */; };
+		5E7CFD751B4AA09200574E10 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD741B4AA09200574E10 /* Order.swift */; };
+		5E7CFD771B4AA0B900574E10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CFD761B4AA0B900574E10 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5E7CFD5F1B4A918700574E10 /* ordswiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ordswiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7CFD641B4A918700574E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E7CFD651B4A918700574E10 /* ordswiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordswiTests.swift; sourceTree = "<group>"; };
+		5E7CFD741B4AA09200574E10 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5E7CFD761B4AA0B900574E10 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		5E7CFD6F1B4A919000574E10 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E7CFD761B4AA0B900574E10 /* Item.swift */,
+				5E7CFD741B4AA09200574E10 /* Order.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7CFD771B4AA0B900574E10 /* Item.swift in Sources */,
 				5E7CFD521B4A918700574E10 /* ViewController.swift in Sources */,
+				5E7CFD751B4AA09200574E10 /* Order.swift in Sources */,
 				5E7CFD501B4A918700574E10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
