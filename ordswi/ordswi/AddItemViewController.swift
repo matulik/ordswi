@@ -28,12 +28,17 @@ class AddItemViewController: UIViewController {
     }
     @IBAction func addItem(sender: AnyObject) {
         var name = nameTextField.text
-        var cost = costTextField.text
+        var cost : Double = (costTextField.text as NSString).doubleValue
         if count(name) <= 0 {
             self.errorLabel.text = "Error in name field"
         }
+        // todo
         else {
-            ## TODO
+            var i = Item(name: name, cost: cost)
+            Content.items.append(i)
+            dispatch_async(dispatch_get_main_queue()){
+                self.performSegueWithIdentifier("AddItemToMain", sender: self)
+            }
         }
     }
 

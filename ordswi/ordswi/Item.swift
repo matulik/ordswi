@@ -55,6 +55,7 @@ class Item {
         else {
             self.cost = 0.0
         }
+        println("Item added by init.")
     }
 }
 

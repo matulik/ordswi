@@ -8,7 +8,10 @@
 
 import UIKit
 
-var orders = [Order]()
+struct Content {
+    static var items = [Item]()
+    static var orders = [Order]()
+}
 
 class ViewController: UIViewController {
 
