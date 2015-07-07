@@ -27,6 +27,10 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Tables register
         self.itemTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "itemCell")
         self.orderTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "orderCell")
+        
+        self.itemTableView.setEditing(true, animated: true)
+        self.itemTableView.hidden = false
+        self.orderTableView.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,15 +66,17 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func switchTables(sender: AnyObject) {
+        println(self.itemTableView.hidden)
+        if self.orderTableView.hidden {
+            self.orderTableView.hidden = false
+            self.itemTableView.hidden = true
+        }
+        else {
+            self.orderTableView.hidden = true
+            self.itemTableView.hidden = false
+        }
     }
-    */
-
+    
+    
 }

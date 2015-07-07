@@ -73,6 +73,16 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         itemListTableView.reloadData()
     }
     
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let item : Item = Content.items[sourceIndexPath.row]
+        Content.items.removeAtIndex(sourceIndexPath.row)
+        Content.items.insert(item, atIndex: destinationIndexPath.row)
+    }
+    
     // Edited notify
     
         // # TODO #
