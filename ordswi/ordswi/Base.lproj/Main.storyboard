@@ -134,6 +134,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="457" width="375" height="210"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="nen-4P-eG5" id="Zu1-P4-Z8A"/>
+                                    <outlet property="delegate" destination="nen-4P-eG5" id="pcF-W6-ycq"/>
+                                </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DSY-0D-oGx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -141,6 +145,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="375" height="332"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="nen-4P-eG5" id="AA1-qX-IcB"/>
+                                    <outlet property="delegate" destination="nen-4P-eG5" id="Fof-iK-44s"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.2081163194" green="0.2081163194" blue="0.2081163194" alpha="1" colorSpace="calibratedRGB"/>
@@ -652,7 +660,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2I9-32-t5m"/>
+        <segue reference="XGt-mU-Zc6"/>
         <segue reference="ISB-z1-Rrv"/>
     </inferredMetricsTieBreakers>
 </document>

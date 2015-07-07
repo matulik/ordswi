@@ -11,6 +11,8 @@ import UIKit
 class AddOrderViewController: UIViewController {
     @IBOutlet var tagTextField: UITextField!
     @IBOutlet var errorLabel: UILabel!
+    
+    var passingOrderIndex : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,7 @@ class AddOrderViewController: UIViewController {
         else {
             var o = Order()
             Content.orders.append(o)
+            self.passingOrderIndex = Content.orders.count
             self.performSegueWithIdentifier("NewOrder", sender: self)
         }
     }
@@ -40,6 +43,7 @@ class AddOrderViewController: UIViewController {
         if segue.identifier == "NewOrder" {
             let destinationViewController = segue.destinationViewController as? OrderViewController
             destinationViewController?.navBarTag = self.tagTextField.text
+            destinationViewController?.passingOrderIndex = self.passingOrderIndex
         }
     }
     
