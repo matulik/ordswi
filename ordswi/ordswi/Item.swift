@@ -57,5 +57,24 @@ class Item {
         }
         println("Item added by init.")
     }
+    
+    func checkName(name: String) -> Bool {
+        if count(name) <= 0 {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
+    func checkCostAsString(cost: String) -> Bool {
+        return true
+    }
+    
+    func changeItemData(name: String, cost: Double) {
+        self.name = name
+        self.cost = cost
+    }
+    
 }
 

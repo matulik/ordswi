@@ -27,14 +27,19 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func addItem(sender: AnyObject) {
+        var i = Item()
         var name = nameTextField.text
-        var cost : Double = (costTextField.text as NSString).doubleValue
-        if count(name) <= 0 {
+        var cost = costTextField.text
+        if !i.checkName(name) {
             self.errorLabel.text = "Error in name field"
+            return
         }
-        // todo
+        else if !i.checkCostAsString(cost){
+            self.errorLabel.text = "Error in cost field"
+            return
+        }
         else {
-            var i = Item(name: name, cost: cost)
+            i = Item(name: name, cost: (cost as NSString).doubleValue)
             Content.items.append(i)
             dispatch_async(dispatch_get_main_queue()){
                 self.performSegueWithIdentifier("AddItemToMain", sender: self)

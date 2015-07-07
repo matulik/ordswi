@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemListController: UIViewController, UITableViewDelegate , UITableViewDataSource{
+class ItemListController: UIViewController, UITableViewDelegate , UITableViewDataSource,  UISearchBarDelegate, UISearchDisplayDelegate {
     @IBOutlet var itemListTableView: UITableView!
 
     override func viewDidLoad() {
@@ -16,6 +16,11 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         
         // TableView register class
         
+        self.itemListTableView.reloadData()
+        
+        self.itemListTableView.setEditing(true, animated: true)
+        self.itemListTableView.allowsSelectionDuringEditing = true
+        self.itemListTableView.allowsMultipleSelection = false
         self.itemListTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         
@@ -25,6 +30,18 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Passing data to another Segue
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ItemEdit" {
+            if let destinationViewController = segue.destinationViewController as? EditItemViewController {
+                let index = self.itemListTableView.indexPathForSelectedRow()
+                println("index=\(index!.row)")
+                destinationViewController.item = Content.items[index!.row]
+            }
+        }
     }
 
     // TableView functions - DataSource prot.
@@ -45,20 +62,20 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         
         return cell
     }
-    
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        println("selected row = \(indexPath.row)")
+  
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("selected row = \(indexPath.row). moving to next segue")
+        self.performSegueWithIdentifier("ItemEdit", sender: self)
+    }
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let deleteIndex = indexPath.row
+        Content.items.removeAtIndex(deleteIndex)
+        itemListTableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // SearchBar
+   
+    
 
 }
