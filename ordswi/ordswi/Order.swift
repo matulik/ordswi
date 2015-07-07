@@ -26,6 +26,7 @@ class Order {
     var count : UInt
     var isOrdered : Bool = false
     var orderCost : Double = 0.0
+    var tag : String = ""
     var items = [Item]()
     
     init() {
@@ -35,6 +36,14 @@ class Order {
         i.nextIndex()
         //
         self.count = 0
+    }
+    
+    init(name: String) {
+        var i = Indexer()
+        self.id = i.getIndex()
+        i.nextIndex()
+        self.count = 0
+        self.tag = name
     }
     
     func setOrdered() {

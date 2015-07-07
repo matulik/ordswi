@@ -23,7 +23,6 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         self.itemListTableView.allowsMultipleSelection = false
         self.itemListTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
-        
         // Do any additional setup after loading the view.
     }
 
@@ -73,6 +72,10 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         Content.items.removeAtIndex(deleteIndex)
         itemListTableView.reloadData()
     }
+    
+    // Edited notify
+    
+        // # TODO #
     
     // SearchBar
    

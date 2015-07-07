@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E558F4D1B4BB1DD00560E7B /* ItemListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E558F4C1B4BB1DD00560E7B /* ItemListController.swift */; };
 		5E558F4F1B4BC6E800560E7B /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E558F4E1B4BC6E800560E7B /* EditItemViewController.swift */; };
+		5E558F511B4BF08900560E7B /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E558F501B4BF08900560E7B /* AddOrderViewController.swift */; };
+		5E558F531B4BF60400560E7B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E558F521B4BF60400560E7B /* OrderViewController.swift */; };
 		5EFBE30B1B4AB4C200B09759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE30A1B4AB4C200B09759 /* AppDelegate.swift */; };
 		5EFBE30D1B4AB4C200B09759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBE30C1B4AB4C200B09759 /* ViewController.swift */; };
 		5EFBE3101B4AB4C200B09759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFBE30E1B4AB4C200B09759 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		5E558F4C1B4BB1DD00560E7B /* ItemListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListController.swift; sourceTree = "<group>"; };
 		5E558F4E1B4BC6E800560E7B /* EditItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		5E558F501B4BF08900560E7B /* AddOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		5E558F521B4BF60400560E7B /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		5EFBE3051B4AB4C200B09759 /* ordswi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ordswi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFBE3091B4AB4C200B09759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EFBE30A1B4AB4C200B09759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 		5EFBE32D1B4AB50E00B09759 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5E558F521B4BF60400560E7B /* OrderViewController.swift */,
+				5E558F501B4BF08900560E7B /* AddOrderViewController.swift */,
 				5E558F4E1B4BC6E800560E7B /* EditItemViewController.swift */,
 				5E558F4C1B4BB1DD00560E7B /* ItemListController.swift */,
 				5EFBE3341B4AB73300B09759 /* AddItemViewController.swift */,
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFBE3351B4AB73300B09759 /* AddItemViewController.swift in Sources */,
+				5E558F531B4BF60400560E7B /* OrderViewController.swift in Sources */,
 				5EFBE30D1B4AB4C200B09759 /* ViewController.swift in Sources */,
+				5E558F511B4BF08900560E7B /* AddOrderViewController.swift in Sources */,
 				5EFBE3381B4ABBF800B09759 /* LeftToRightSegue.swift in Sources */,
 				5E558F4F1B4BC6E800560E7B /* EditItemViewController.swift in Sources */,
 				5EFBE32F1B4AB5A800B09759 /* Item.swift in Sources */,
