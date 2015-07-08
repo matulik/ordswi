@@ -101,7 +101,7 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if tableView == self.orderTableView {
             var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "orderCell")
-            cell.textLabel?.text = Content.orders[self.passingOrderIndex].items[indexPath.row].name
+            cell.textLabel?.text = String(format: "%d", indexPath.row+1) + " - " + Content.orders[self.passingOrderIndex].items[indexPath.row].name
             return cell
         }
         else { // itemTableView
@@ -120,25 +120,55 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-    // AlertView
-    // #TODO# auto alert hide // Function to handle touch and dismiss alert
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if tableView == self.itemTableView {
-            Content.orders[self.passingOrderIndex].addItem(Content.items[indexPath.row])
-            self.updateCostLabel()
-            var addAlert : UIAlertController = UIAlertController(title: "OK!", message: "Item added successfully", preferredStyle: UIAlertControllerStyle.Alert)
-            let okAction : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-            addAlert.addAction(okAction)
-            self.presentViewController(addAlert, animated: true, completion: nil)
-        }
-        else {
-            println("Delete: orderindex:\(self.passingOrderIndex) count:\(Content.orders[self.passingOrderIndex].items.count) row:\(indexPath.row)")
-            Content.orders[self.passingOrderIndex].removeItemByIndex(indexPath.row)
-            self.updateCostLabel()
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        if tableView == self.orderTableView {
+            let item : Item = Content.orders[self.passingOrderIndex].items[sourceIndexPath.row]
+            Content.orders[self.passingOrderIndex].items.removeAtIndex(sourceIndexPath.row)
+            Content.orders[self.passingOrderIndex].items.insert(item, atIndex: destinationIndexPath.row)
             self.orderTableView.reloadData()
         }
     }
     
-
-    
+    // AlertView
+    // #TODO# auto alert hide // Function to handle touch and dismiss alert
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        var addAlert : UIAlertController = UIAlertController(title: "", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        if tableView == self.itemTableView {
+            if !Content.orders[self.passingOrderIndex].isOrdered {
+                addAlert.title = "OK!"
+                addAlert.message = "Item added successfuly"
+                Content.orders[self.passingOrderIndex].addItem(Content.items[indexPath.row])
+                self.updateCostLabel()
+                let okAction : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                addAlert.addAction(okAction)
+                self.presentViewController(addAlert, animated: true, completion: nil)
+            }
+            else {
+                addAlert.title = "Ups!"
+                addAlert.message = "Order was issued"
+                let upsAction : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Destructive, handler: nil)
+                addAlert.addAction(upsAction)
+                self.presentViewController(addAlert, animated: true, completion: nil)
+            }
+        }
+        else {
+            if !Content.orders[self.passingOrderIndex].isOrdered {
+                println("Delete: orderindex:\(self.passingOrderIndex) count:\(Content.orders[self.passingOrderIndex].items.count) row:\(indexPath.row)")
+                Content.orders[self.passingOrderIndex].removeItemByIndex(indexPath.row)
+                self.updateCostLabel()
+                self.orderTableView.reloadData()
+            }
+            else {
+                addAlert.title = "Ups!"
+                addAlert.message = "Order was issued"
+                let upsAction : UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Destructive, handler: nil)
+                addAlert.addAction(upsAction)
+                self.presentViewController(addAlert, animated: true, completion: nil)
+            }
+        }
+    }
 }
