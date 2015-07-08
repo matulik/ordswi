@@ -44,7 +44,7 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.orderTableView.editing = true
         self.itemTableView.hidden = true
         self.orderTableView.hidden = false
-        self.orderNavBar.title = self.orderNavBar.title! + " (orderview)"
+        self.orderNavBar.title = self.orderNavBar.title!
         self.orderTableView.reloadData()
         self.itemTableView.reloadData()
         self.updateCostLabel()
@@ -70,14 +70,14 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.itemTableView.hidden = true
             self.setIssuedButton.hidden = false
             self.totalCostLabel.hidden = false
-            self.orderNavBar.title = "Order - " + self.navBarTag + " (orderview)"
+            self.orderNavBar.title = "Order - " + self.navBarTag
         }
         else {
             self.orderTableView.hidden = true
             self.itemTableView.hidden = false
             self.setIssuedButton.hidden = true
             self.totalCostLabel.hidden = true
-            self.orderNavBar.title = "Order - " + self.navBarTag + " (itemview)"
+            self.orderNavBar.title = "Order - " + self.navBarTag
         }
         self.orderTableView.reloadData()
         self.itemTableView.reloadData()
@@ -130,6 +130,15 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
             Content.orders[self.passingOrderIndex].items.removeAtIndex(sourceIndexPath.row)
             Content.orders[self.passingOrderIndex].items.insert(item, atIndex: destinationIndexPath.row)
             self.orderTableView.reloadData()
+        }
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView == self.itemTableView {
+            return "List of items"
+        }
+        else {
+            return "List of ordered items"
         }
     }
     
