@@ -28,8 +28,16 @@ class ViewController: UIViewController {
             Content.items.append(i1)
             Content.items.append(i2)
             Content.items.append(i3)
+            
+            var o1 = Order(name: "First")
+            o1.addItem(i1)
+            o1.addItem(i3)
+            Content.orders.append(o1)
+
             firstRun = false;
         }
+        
+        println("Orders:\(Content.orders.count). Items:\(Content.items.count)")
         
     }
 

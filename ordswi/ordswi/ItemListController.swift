@@ -73,6 +73,8 @@ class ItemListController: UIViewController, UITableViewDelegate , UITableViewDat
         itemListTableView.reloadData()
     }
     
+    // Moving prots.
+    
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }

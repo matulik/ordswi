@@ -55,6 +55,7 @@ class Order {
         for i in items {
             cost = cost + i.cost
         }
+        self.orderCost = cost
     }
     
     func getOrderCost() -> Double {
@@ -65,9 +66,20 @@ class Order {
     func addItem(item: Item?) {
         if let i = item {
             items.append(item!)
+            self.calcOrder()
         }
         else {
             println("nil")
+        }
+    }
+    
+    func removeItemByIndex(index: Int) {
+        if index >= 0 && index < items.count {
+            self.items.removeAtIndex(index)
+            self.calcOrder()
+        }
+        else {
+            println("error, bad index")
         }
     }
     

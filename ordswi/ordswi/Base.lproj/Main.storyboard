@@ -67,7 +67,7 @@
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-13" y="20" width="400" height="44"/>
+                                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 </variation>
                             </navigationBar>
                         </subviews>
@@ -119,8 +119,11 @@
                                 <color key="barTintColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Order - " id="D0F-1T-AoN">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="YYt-RI-WCg">
+                                        <barButtonItem key="leftBarButtonItem" title="back" style="done" id="YYt-RI-WCg">
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="b9M-Bv-wh6" kind="show" id="PGu-Qz-MaA"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="UuH-dl-5jo">
                                             <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="laB-tc-ppB">
@@ -137,35 +140,16 @@
                                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 </variation>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqQ-u7-0HZ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Switch tabs">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="278" y="31" width="91" height="21"/>
-                                </variation>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h44-VQ-Bkj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h44-VQ-Bkj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DSY-0D-oGx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u1f-l7-wIs">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <connections>
-                                        <outlet property="dataSource" destination="nen-4P-eG5" id="AA1-qX-IcB"/>
-                                        <outlet property="delegate" destination="nen-4P-eG5" id="Fof-iK-44s"/>
-                                    </connections>
-                                </tableView>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 </variation>
@@ -174,6 +158,39 @@
                                     <outlet property="delegate" destination="nen-4P-eG5" id="pcF-W6-ycq"/>
                                 </connections>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-q4-qnh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.2081163194" green="0.2081163194" blue="0.2081163194" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="381" height="575"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="nen-4P-eG5" id="YbS-g9-gCo"/>
+                                    <outlet property="delegate" destination="nen-4P-eG5" id="Mag-JQ-2pP"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-Uh-mP3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Set as issued">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="211" y="637" width="92" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="setAsIssued:" destination="nen-4P-eG5" eventType="touchUpInside" id="Y4s-mb-XoX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-5e-iIx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="642" width="108" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2081163194" green="0.2081163194" blue="0.2081163194" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,15 +198,19 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1fW-iy-UA7"/>
-                                <exclude reference="kqQ-u7-0HZ"/>
                                 <exclude reference="h44-VQ-Bkj"/>
+                                <exclude reference="DoI-q4-qnh"/>
+                                <exclude reference="sn3-Uh-mP3"/>
+                                <exclude reference="Hi7-5e-iIx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1fW-iy-UA7"/>
-                                <include reference="kqQ-u7-0HZ"/>
                                 <include reference="h44-VQ-Bkj"/>
+                                <include reference="DoI-q4-qnh"/>
+                                <include reference="sn3-Uh-mP3"/>
+                                <include reference="Hi7-5e-iIx"/>
                             </mask>
                         </variation>
                     </view>
@@ -197,7 +218,9 @@
                     <connections>
                         <outlet property="itemTableView" destination="h44-VQ-Bkj" id="x52-pX-Y7u"/>
                         <outlet property="orderNavBar" destination="D0F-1T-AoN" id="uj3-3E-d90"/>
-                        <outlet property="orderTableView" destination="DSY-0D-oGx" id="1uh-01-OlR"/>
+                        <outlet property="orderTableView" destination="DoI-q4-qnh" id="gDh-lM-MIT"/>
+                        <outlet property="setIssuedButton" destination="sn3-Uh-mP3" id="R0k-qS-dQT"/>
+                        <outlet property="totalCostLabel" destination="Hi7-5e-iIx" id="bOS-qq-MOf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhB-Gq-VjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +237,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITEM LIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-sp-IDf">
@@ -288,6 +311,7 @@
                             <outletCollection property="gestureRecognizers" destination="hv5-cA-Cak" appends="YES" id="O00-Ph-Dft"/>
                             <outletCollection property="gestureRecognizers" destination="7KN-9p-PkK" appends="YES" id="VdL-1O-aKL"/>
                             <outletCollection property="gestureRecognizers" destination="Y12-yn-BXZ" appends="YES" id="TCR-mw-QnL"/>
+                            <outletCollection property="gestureRecognizers" destination="qZ4-6q-f0x" appends="YES" id="3HN-W0-t6g"/>
                         </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -308,6 +332,11 @@
                         <segue destination="b9M-Bv-wh6" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="ifl-3A-BTh"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="qZ4-6q-f0x">
+                    <connections>
+                        <segue destination="ZJx-Wn-opX" kind="presentation" modalPresentationStyle="pageSheet" id="p8K-nV-ftd"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="678.75" y="675.5"/>
         </scene>
@@ -320,6 +349,7 @@
                         <viewControllerLayoutGuide type="bottom" id="AbQ-GA-LZY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Evk-MX-U4O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zc9-Ks-BiF">
@@ -378,9 +408,6 @@
                                     <color key="titleColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="189" y="339" width="62" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="addItem:" destination="1AE-W7-T5x" eventType="touchUpInside" id="Tzc-Cc-A7t"/>
                                 </connections>
@@ -415,11 +442,11 @@
                                 <exclude reference="1ka-l1-E27"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="TLX-m0-iML"/>
                                 <exclude reference="4mg-5G-JOW"/>
                                 <exclude reference="hGW-Zh-ME0"/>
                                 <exclude reference="mrZ-op-Wgv"/>
                                 <exclude reference="wVH-EX-qKN"/>
-                                <exclude reference="TLX-m0-iML"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -433,11 +460,11 @@
                                 <include reference="1ka-l1-E27"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="TLX-m0-iML"/>
                                 <include reference="4mg-5G-JOW"/>
                                 <include reference="hGW-Zh-ME0"/>
                                 <include reference="mrZ-op-Wgv"/>
                                 <include reference="wVH-EX-qKN"/>
-                                <include reference="TLX-m0-iML"/>
                             </mask>
                         </variation>
                         <connections>
@@ -469,6 +496,7 @@
                         <viewControllerLayoutGuide type="bottom" id="J37-fi-QXv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c5h-B3-ChR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oke-9q-SHk">
@@ -572,6 +600,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sCa-we-Yj9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7RF-A0-TbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-BS-9zB">
@@ -647,7 +676,7 @@
                                 </variation>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2081163194" green="0.2081163194" blue="0.2081163194" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
@@ -684,9 +713,76 @@
             </objects>
             <point key="canvasLocation" x="-247.5" y="1468"/>
         </scene>
+        <!--Order List Controller-->
+        <scene sceneID="CHc-Y8-Az4">
+            <objects>
+                <viewController id="ZJx-Wn-opX" customClass="OrderListController" customModule="ordswi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQO-V0-XQd"/>
+                        <viewControllerLayoutGuide type="bottom" id="WyR-GU-Axl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oni-8Z-DIL">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXm-qS-oWe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Order list" id="dKV-Pc-b9N">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="Map-AA-3b4">
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="JEz-Bi-3KI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Sz-1z-KDM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZJx-Wn-opX" id="2if-Xj-5FT"/>
+                                    <outlet property="delegate" destination="ZJx-Wn-opX" id="T9C-3g-fzU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2081163194" green="0.2081163194" blue="0.2081163194" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.73205735729999999" green="0.877249053" blue="0.093471722879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fXm-qS-oWe"/>
+                                <exclude reference="1Sz-1z-KDM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fXm-qS-oWe"/>
+                                <include reference="1Sz-1z-KDM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="orderTableView" destination="1Sz-1z-KDM" id="ECx-9z-GNg"/>
+                        <segue destination="nen-4P-eG5" kind="presentation" identifier="OrderListToEdit" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="15T-tW-dyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGn-dE-8Zl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678.75" y="1467.5"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XGt-mU-Zc6"/>
+        <segue reference="15T-tW-dyN"/>
+        <segue reference="JEz-Bi-3KI"/>
+        <segue reference="PGu-Qz-MaA"/>
         <segue reference="ISB-z1-Rrv"/>
     </inferredMetricsTieBreakers>
 </document>

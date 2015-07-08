@@ -32,9 +32,9 @@ class AddOrderViewController: UIViewController {
             return
         }
         else {
-            var o = Order()
+            var o = Order(name: self.tagTextField.text)
             Content.orders.append(o)
-            self.passingOrderIndex = Content.orders.count
+            self.passingOrderIndex = Content.orders.count-1
             self.performSegueWithIdentifier("NewOrder", sender: self)
         }
     }
